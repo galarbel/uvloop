@@ -403,7 +403,7 @@ cdef extern from "uv.h" nogil:
 
     # Polling
 
-    int uv_poll_init(uv_loop_t* loop, uv_poll_t* handle, int fd)
+    
     int uv_poll_init_socket(uv_loop_t* loop, uv_poll_t* handle,
                             uv_os_sock_t socket)
     int uv_poll_start(uv_poll_t* handle, int events, uv_poll_cb cb)
